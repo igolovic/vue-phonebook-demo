@@ -26,21 +26,6 @@ namespace phonebook_webapi.Controllers
             this.logger = logger;
         }
 
-        [HttpGet]
-        public List<EmployeeItem> Get()
-        {
-            try
-            {
-                var employees = EmployeeManager.GetEmployees();
-                return employees;
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex);
-                throw;
-            }
-        }
-
         [HttpPost]
         public List<EmployeeItem> Post([FromBody] RequestEmployeesForUser value)
         {
