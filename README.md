@@ -1,7 +1,7 @@
 # poc-phonebook-vui
-**POC of phonebook implemented in Vue and .NET Core Web API**
+**POC of phonebook implemented in Vue and .NET Core Web API with Entity Framework and SQL Server**
 
-This is a POC application consisting of frontend written in Vue.JS which calls web API written in .NET Core, data is stored in a relational database on SQL Server instance.   
+This is a POC application phonebook consisting of frontend written in Vue.JS which calls web API written in .NET Core, data is retrieved using Entity Framework from a relational database on SQL Server instance.   
 
     
 **Frontend**   
