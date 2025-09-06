@@ -1,6 +1,7 @@
+![screenshot](./frontend.png?raw=true)   
+   
 # poc-phonebook-vui
-**POC of phonebook implemented in Vue.JS and .NET Core Web API with Entity Framework and SQL Server**
-
+   
 This is a POC application phonebook consisting of frontend written in Vue.JS which calls web API written in .NET Core, data is retrieved using Entity Framework from a relational database on SQL Server instance.   
 
     
@@ -8,15 +9,11 @@ This is a POC application phonebook consisting of frontend written in Vue.JS whi
     
 Front end features a phonebook-like list of contacts with toolbar consisting of pagination controls (back/next buttons and page size selection), filter, and phonebook operator selection (this was implemented instead of phonebook operator's authentication/authorization since that was outside of scope of this POC). To set up application structure Vue-CLI was used. Bootstrap-Vue CSS library was used to achieve better visual appearance. Pagination, sorting, and filtering were "hand-made" implemented (not used from e.g. Bootstrap). Frontend application is in folder phonebook-client.          
 Front-end screenshot:   
-   
-![screenshot](./frontend.png?raw=true)   
-   
+     
    
 **Backend**   
     
 It consists of APIs which are called from frontend using GET or POST methods:   
-   
-![screenshot](./backend.png?raw=true)   
    
 https://localhost:44354/EmployeesWithPermissions - GET method returns a list of employees for which the backend determines that they have access rights to employees' contacts. This method returns a list of phonebook operators. From this list "Application operators" dropdown is populated. This method is called during inital loading of the application.   
    
